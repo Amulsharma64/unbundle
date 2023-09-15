@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unbundle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Develop a Customizabla Product for Chocolate brand</header>
+    <div class="main-container">
+        <div class="left">
+            <div class="media-container">
+                <div class="media">
+                    <img src="https://picsum.photos/500/301" alt="product image">
+                </div>
+                <div class="media">
+                    <img src="https://picsum.photos/500/302" alt="product image">
+                </div>
+                <div class="media">
+                    <img src="https://picsum.photos/500/303" alt="product image">
+                </div>
+                <div class="media">
+                    <img src="https://picsum.photos/500/304" alt="product image">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="product-info">
+                <div class="product-title">
+                    <h1>Assorted Cocktail Mixer Pack</h1>
+                </div>
+        <div class="price-sale">
+            <span id="amount">$ 799</span>
+            <span class="text-light">tax included</span>
+        </div>
+        <div class="pack-size">
+            <span class="text-light">Pack Size</span>
+            <div class="pack-size-options">
+                <div class="pack-size-option">
+                    <input type="button" onclick="onchangePack(799.00)" name="pack-size" id="pack1"  value="Pack of 8 (1 of each)">
+                </div>
+                <div class="pack-size-option">
+                    <input type="button" name="pack-size" id="pack2"  onclick="onchangePack(1599.00)" value="Pack of 16 (2 of each)">
+                </div>
+                <div class="pack-size-option">
+                    <input type="button" name="pack-size" id="pack3" onclick="onchangePack(2399.00)" value="Pack of 24 (3 of each)">
+                </div>
+            </div>
+        </div>
+        <div class="quantity-container">
+            <button class="quantity-btn" onclick="Decrement()">-</button>
+            <span class="quantity">1</span>
+            <button class="quantity-btn" onclick="Increment()">+</button>
+        </div>
+        <div class="add-to-cart">
+            <button class="btn" onclick="addtoCart()">Add to Cart</button>
+        </div>
+    </div>
+        </div>
+     <!-- The overlay and popup container -->
+     <div class="overlay" id="overlay">
+        <div id="popup">
+            <!-- Content of your popup goes here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
